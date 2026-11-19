@@ -1,0 +1,16 @@
+# Cheat Deck
+
+> Guia não oficial, em português, dos cheats do modo história de GTA VI. Para cada um dos 61 cheats, mostra o efeito, o desafio dentro do jogo que libera o cheat e, quando já foi descoberta, a sequência do código no direcional para PlayStation 5 e Xbox Series X|S. É um app grátis para iPhone e Android, ainda não lançado nas lojas.
+
+Cheat Deck não tem vínculo com a Rockstar Games, a Take-Two Interactive, a Sony ou a Microsoft. Os cheats valem só para o modo história.
+
+## Páginas
+
+- [Início](https://cheatdeck.github.io/): o que o app faz e onde baixar.
+- [Suporte](https://cheatdeck.github.io/suporte/): contato, como enviar um código descoberto e perguntas frequentes, incluindo como digitar um cheat.
+- [Política de privacidade](https://cheatdeck.github.io/privacidade/): o app não coleta dados pessoais; progresso e favoritos ficam no aparelho.
+- [Termos de uso](https://cheatdeck.github.io/termos/)
+
+## Dados
+
+- [Lista de cheats em JSON](https://cheatdeck.github.io/cheats.json): nome, categoria, efeito, requisito e código (ou null quando ainda não foi descoberto) de cada cheat.

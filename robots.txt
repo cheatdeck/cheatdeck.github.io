@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://cheatdeck.github.io/sitemap.xml

@@ -34,6 +34,9 @@ baseurl: ""
 # ------------------------------------------------------------------
 
 title: Cheat Deck
+url: "https://cheatdeck.github.io"
+plugins:
+  - jekyll-sitemap
 description: Guia não oficial de cheats do modo história de GTA VI, com o desafio que libera cada cheat e o código no direcional.
 lang: pt-BR
 
