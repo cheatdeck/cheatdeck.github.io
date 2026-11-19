@@ -25,10 +25,9 @@ lojas:
 # Endereço do site
 # ------------------------------------------------------------------
 
-# Nome do repositório no GitHub, com barra na frente.
-# Repositório "cheatdeck" → https://SEU-USUARIO.github.io/cheatdeck/
-# Com domínio próprio, use baseurl: ""
-baseurl: "/cheatdeck"
+# O site fica na raiz de https://cheatdeck.github.io/ (repositório cheatdeck.github.io
+# da organização cheatdeck). Mantenha vazio também com domínio próprio.
+baseurl: ""
 
 # ------------------------------------------------------------------
 # Não precisa mexer daqui para baixo

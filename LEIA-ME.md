@@ -17,29 +17,27 @@ Abra o `_config.yml` e troque:
 - `responsavel`: seu nome completo, ou razão social e CNPJ se publicar por empresa;
 - `email`: o e-mail público de contato (ele fica visível no site);
 - `foro`: cidade e estado, por exemplo `Brasília/DF`;
-- `baseurl`: barra mais o nome do repositório. O padrão `/cheatdeck` serve para um repositório chamado `cheatdeck`.
 
 Enquanto algum campo tiver "PREENCHER", o site mostra uma faixa amarela no topo.
 
-## 2. Publique
+## 2. Onde está publicado
 
-1. No GitHub, crie um repositório chamado `cheatdeck`, **público** (o GitHub Pages gratuito exige repositório público). Não marque a opção de criar README.
-2. Na página do repositório, clique em **uploading an existing file** e arraste **o conteúdo** desta pasta, não a pasta em si. A pasta `_layouts` e o `_config.yml` precisam ir junto. Clique em **Commit changes**.
-3. Vá em **Settings → Pages**. Em **Build and deployment**, escolha **Deploy from a branch**, branch **main**, pasta **/ (root)**, e salve.
-4. Em um ou dois minutos, o site fica no ar em `https://SEU-USUARIO.github.io/cheatdeck/`. O andamento aparece na aba **Actions**.
+- Organização no GitHub: `cheatdeck`
+- Repositório: `cheatdeck/cheatdeck.github.io` (público; o GitHub Pages gratuito exige)
+- Endereço: `https://cheatdeck.github.io/`
+
+Qualquer commit na branch `main` republica o site em um ou dois minutos. O andamento aparece na aba **Actions**.
 
 ## 3. Onde colar cada endereço
 
-Troque `SEU-USUARIO` pelo seu usuário do GitHub.
-
 - **App Store Connect**
-  - URL de suporte: `https://SEU-USUARIO.github.io/cheatdeck/suporte/`
-  - URL de marketing (opcional): `https://SEU-USUARIO.github.io/cheatdeck/`
-  - URL da política de privacidade: `https://SEU-USUARIO.github.io/cheatdeck/privacidade/`
+  - URL de suporte: `https://cheatdeck.github.io/suporte/`
+  - URL de marketing (opcional): `https://cheatdeck.github.io/`
+  - URL da política de privacidade: `https://cheatdeck.github.io/privacidade/`
 - **Google Play Console**
-  - Política de privacidade: `https://SEU-USUARIO.github.io/cheatdeck/privacidade/`
+  - Política de privacidade: `https://cheatdeck.github.io/privacidade/`
 - **Claude Code**
-  - `CHEATS_URL`: `https://SEU-USUARIO.github.io/cheatdeck/cheats.json`
+  - `CHEATS_URL`: `https://cheatdeck.github.io/cheats.json`
   - Links dos Ajustes do app: as páginas `/privacidade/` e `/termos/`
 
 ## 4. Como publicar um código novo
@@ -60,7 +58,7 @@ Cuidados:
 ## 5. Antes de lançar
 
 - **Não renomeie o repositório nem a conta depois que o app sair.** A `CHEATS_URL` fica gravada no app, e as versões já instaladas param de receber códigos novos.
-- **Domínio próprio:** se quiser um endereço como `cheatdeck.app`, configure antes do lançamento, em **Settings → Pages → Custom domain**, e mude o `baseurl` para `""`. Assim a `CHEATS_URL` já nasce no endereço definitivo.
+- **Domínio próprio:** se quiser um endereço como `cheatdeck.app`, configure antes do lançamento, em **Settings → Pages → Custom domain**, Assim a `CHEATS_URL` já nasce no endereço definitivo.
 - **Quando o app estiver nas lojas:** no `_config.yml`, preencha `app_store_id` e `play_id` e mude `publicado_ios` e `publicado_android` para `true`. Os botões "Em breve" viram links de download, e o Safari no iPhone passa a mostrar a faixa da App Store.
 - **Textos legais:** a revisão de um advogado continua recomendada.
 
