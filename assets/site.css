@@ -1,0 +1,196 @@
+/* Cheat Deck: site de suporte e textos legais. Cores e fontes do design system "Cheats GTA 6". */
+
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-display: swap; src: url("fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 400; font-display: swap; src: url("fonts/figtree-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 500; font-display: swap; src: url("fonts/figtree-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 700; font-display: swap; src: url("fonts/figtree-latin-700-normal.woff2") format("woff2"); }
+
+:root {
+  --fundo: #0c0d1b;
+  --cartao: #252644;
+  --cartao-2: #38365d;
+  --creme: #fff9cb;
+  --rosa: #ffb2c6;
+  --rosa-claro: #fecbda;
+  --vinho-texto: #603955;
+  --lilas: #e5ddff;
+  --lilas-2: #ccc2f5;
+  --manteiga: #ffdf9e;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --texto: Figtree, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scrollbar-color: var(--cartao-2) var(--fundo); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 0%, #1f1f38 0%, var(--fundo) 640px) var(--fundo) no-repeat;
+  color: #ffffff;
+  font-family: var(--texto);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+::selection { background: var(--rosa); color: var(--fundo); }
+
+a { color: var(--rosa); text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: color .15s ease-out; }
+a:hover { color: var(--rosa-claro); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; border-radius: 4px; }
+
+/* Aviso de configuração pendente */
+.aviso-config {
+  margin: 0;
+  padding: 12px 24px;
+  background: var(--manteiga);
+  color: var(--fundo);
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Topo */
+.topo {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--creme);
+  text-decoration: none;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.marca:hover { color: var(--creme); }
+.marca img { display: block; }
+.topo nav a { color: #ffffff; text-decoration: none; font-weight: 500; font-size: 16px; }
+.topo nav a:hover, .topo nav a[aria-current="page"] { color: var(--rosa); }
+
+/* Conteúdo de leitura */
+main { flex: 1 0 auto; width: 100%; }
+
+.texto {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px 96px;
+  color: var(--lilas);
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--creme);
+  text-wrap: balance;
+}
+h1 { margin: 0; font-size: clamp(44px, 8vw, 64px); line-height: 0.95; text-transform: uppercase; }
+h2 { margin: 56px 0 12px; font-size: 30px; line-height: 1.05; text-transform: uppercase; }
+h3 { margin: 32px 0 8px; font-size: 24px; line-height: 1.1; }
+
+.data { margin: 16px 0 0; font-size: 15px; color: var(--lilas-2); }
+
+.texto p, .texto ul, .texto ol { margin: 0 0 16px; }
+.texto h1 + p, .texto .data + p { margin-top: 32px; }
+.texto ul, .texto ol { padding-left: 24px; }
+.texto li { margin-bottom: 6px; }
+.texto li::marker { color: var(--rosa); }
+.texto strong { color: #ffffff; font-weight: 700; }
+
+/* Bloco de destaque (resumo da política, contato) */
+.destaque {
+  margin: 32px 0 0;
+  padding: 24px 24px 8px;
+  border-radius: 12px;
+  background: var(--cartao);
+}
+.destaque h2 { margin-top: 0; font-size: 24px; }
+
+/* Início */
+.inicio {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+@media (min-width: 880px) {
+  .inicio { grid-template-columns: minmax(0, 1fr) 340px; gap: 80px; padding-top: 72px; }
+}
+.inicio h1 { font-size: clamp(56px, 10vw, 96px); line-height: 0.9; }
+.inicio .chamada { margin: 24px 0 0; max-width: 34ch; font-size: 21px; line-height: 1.45; color: #ffffff; }
+.inicio ul { margin: 32px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; color: var(--lilas); }
+.inicio li { display: flex; gap: 12px; align-items: baseline; }
+.inicio li::before { content: ""; flex: 0 0 8px; height: 8px; border-radius: 50%; background: var(--rosa); transform: translateY(-2px); }
+
+.lojas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+.loja {
+  display: inline-flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 24px;
+  border-radius: 1000px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+a.loja { background: var(--rosa-claro); color: var(--vinho-texto); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); transition: background-color .15s ease-out; }
+a.loja:hover { background: #ffdbe6; color: var(--vinho-texto); }
+span.loja { border: 1.5px solid var(--cartao-2); color: var(--lilas-2); font-weight: 500; }
+
+.tela {
+  justify-self: center;
+  width: 100%;
+  max-width: 340px;
+  padding: 10px;
+  border-radius: 44px;
+  background: #050510;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+}
+.tela img { display: block; width: 100%; height: auto; border-radius: 34px; }
+
+/* Rodapé */
+.rodape {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  border-top: 1px solid var(--cartao);
+  font-size: 15px;
+  color: var(--lilas-2);
+}
+.rodape nav { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-bottom: 12px; }
+.rodape nav a { color: #ffffff; text-decoration: none; }
+.rodape nav a:hover { color: var(--rosa); }
+.rodape p { margin: 0; max-width: 60ch; }
+
+@media (max-width: 520px) {
+  body { font-size: 17px; }
+  .topo { padding: 20px; }
+  .texto { padding: 24px 20px 72px; }
+  h2 { margin-top: 48px; font-size: 26px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

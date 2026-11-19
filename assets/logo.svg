@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+<title>Logo 01A-1 · Fade Crepúsculo</title>
+<defs>
+<linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="89.86" y1="-32.71" x2="230.14" y2="352.71">
+<stop offset="0" stop-color="#6A2BD9"></stop><stop offset="0.5" stop-color="#FF2D95"></stop><stop offset="1" stop-color="#FF8A1F"></stop>
+</linearGradient>
+<clipPath id="shape"><rect width="320" height="320" rx="72"></rect></clipPath>
+</defs>
+<g clip-path="url(#shape)">
+<rect width="320" height="320" fill="url(#fade)"></rect>
+<path d="M229.93 137.82H175.91Q179.18 122.46 173.02 113.5Q166.86 104.54 152.01 104.54Q134.86 104.54 124.51 115.3Q114.16 126.05 110.08 145.25L106.59 161.63Q102.57 180.58 108.32 191.46Q114.07 202.34 130.71 202.34Q147.09 202.34 157.34 193.89Q167.58 185.44 170.85 170.08H223.07Q215.4 206.18 189.17 225.38Q162.95 244.58 122.5 244.58Q77.44 244.58 59.17 221.54Q40.9 198.5 50.48 153.44Q60.06 108.38 88.12 85.34Q116.19 62.3 161.24 62.3Q200.41 62.3 219.03 81.89Q237.65 101.47 229.93 137.82Z" fill="#111111"></path>
+<polygon points="248.80,118.60 252.58,149.51 284.07,156.20 255.05,168.84 257.55,201.35 236.17,178.00 207.15,190.64 222.65,161.96 201.28,138.60 232.78,145.30" fill="#FFFFFF" stroke="#111111" stroke-width="6.44" stroke-linejoin="round"></polygon>
+</g>
+</svg>

@@ -1,0 +1,56 @@
+# ------------------------------------------------------------------
+# Preencha estes campos antes de publicar.
+# Enquanto algum deles tiver "PREENCHER", o site mostra uma faixa de aviso no topo.
+# ------------------------------------------------------------------
+
+# Quem responde pelo app perante a LGPD.
+# Pessoa física: nome completo. Empresa: razão social e CNPJ.
+responsavel: "PREENCHER nome do responsável"
+
+# E-mail público de contato. Aparece no suporte, na política e nos termos.
+# Dica: use um endereço só para o app, porque ele fica público.
+email: "PREENCHER@exemplo.com"
+
+# Foro dos Termos de uso, no formato Cidade/UF.
+foro: "PREENCHER Cidade/UF"
+
+# Lojas. Deixe "publicado" em false até o app estar disponível em cada loja.
+lojas:
+  app_store_id: ""          # Apple ID numérico (App Store Connect → Informações do app)
+  publicado_ios: false
+  play_id: ""               # applicationId do Android, ex.: com.joaobottazzini.cheatdeck
+  publicado_android: false
+
+# ------------------------------------------------------------------
+# Endereço do site
+# ------------------------------------------------------------------
+
+# Nome do repositório no GitHub, com barra na frente.
+# Repositório "cheatdeck" → https://SEU-USUARIO.github.io/cheatdeck/
+# Com domínio próprio, use baseurl: ""
+baseurl: "/cheatdeck"
+
+# ------------------------------------------------------------------
+# Não precisa mexer daqui para baixo
+# ------------------------------------------------------------------
+
+title: Cheat Deck
+description: Guia não oficial de cheats do modo história de GTA VI, com o desafio que libera cada cheat e o código no direcional.
+lang: pt-BR
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - LEIA-ME.md
+  - Gemfile
+  - Gemfile.lock

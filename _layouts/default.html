@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="theme-color" content="#0c0d1b">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:type" content="website">
+<link rel="icon" href="{{ '/assets/logo.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
+<link rel="preload" href="{{ '/assets/fonts/barlow-condensed-latin-700-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/figtree-latin-400-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+{%- if site.lojas.publicado_ios and site.lojas.app_store_id != "" %}
+<meta name="apple-itunes-app" content="app-id={{ site.lojas.app_store_id }}">
+{%- endif %}
+</head>
+<body>
+{%- if site.responsavel contains "PREENCHER" or site.email contains "PREENCHER" or site.foro contains "PREENCHER" %}
+<p class="aviso-config" role="alert">Preencha responsável, e-mail e foro no arquivo _config.yml antes de divulgar este site.</p>
+{%- endif %}
+
+<header class="topo">
+  <a class="marca" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/logo.svg' | relative_url }}" width="32" height="32" alt="">
+    <span>Cheat Deck</span>
+  </a>
+  <nav aria-label="Páginas">
+    <a href="{{ '/suporte/' | relative_url }}"{% if page.url == '/suporte/' %} aria-current="page"{% endif %}>Suporte</a>
+  </nav>
+</header>
+
+<main class="{{ page.classe | default: 'texto' }}">
+{%- if page.title and page.esconder_titulo != true %}
+  <h1>{{ page.title }}</h1>
+{%- endif %}
+{%- if page.atualizado %}
+  <p class="data">Última atualização: {{ page.atualizado | date: "%d/%m/%Y" }}</p>
+{%- endif %}
+{{ content }}
+</main>
+
+<footer class="rodape">
+  <nav aria-label="Rodapé">
+    <a href="{{ '/suporte/' | relative_url }}">Suporte</a>
+    <a href="{{ '/privacidade/' | relative_url }}">Política de privacidade</a>
+    <a href="{{ '/termos/' | relative_url }}">Termos de uso</a>
+  </nav>
+  <p>Cheat Deck é um guia não oficial, sem vínculo com a Rockstar Games, a Take-Two Interactive, a Sony ou a Microsoft.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+---
+classe: inicio
+---
+<div>
+  <h1>Cheat Deck</h1>
+  <p class="chamada">Os cheats do modo história de GTA VI, com o desafio que libera cada um e o código no direcional.</p>
+  <ul>
+    <li>61 cheats, com o requisito de cada um</li>
+    <li>Seu progresso em cada desafio, guardado no aparelho</li>
+    <li>Aviso quando um código novo for descoberto</li>
+    <li>Sequências para PlayStation 5 e Xbox Series X|S</li>
+  </ul>
+  <div class="lojas">
+    {%- if site.lojas.publicado_ios and site.lojas.app_store_id != "" %}
+    <a class="loja" href="https://apps.apple.com/app/id{{ site.lojas.app_store_id }}">Baixar na App Store</a>
+    {%- else %}
+    <span class="loja">Em breve na App Store</span>
+    {%- endif %}
+    {%- if site.lojas.publicado_android and site.lojas.play_id != "" %}
+    <a class="loja" href="https://play.google.com/store/apps/details?id={{ site.lojas.play_id }}">Baixar no Google Play</a>
+    {%- else %}
+    <span class="loja">Em breve no Google Play</span>
+    {%- endif %}
+  </div>
+</div>
+<div class="tela">
+  <img src="{{ '/assets/tela-lista.webp' | relative_url }}" width="780" height="1688" alt="Tela do app com a lista de cheats, o desafio de cada um e o progresso.">
+</div>
