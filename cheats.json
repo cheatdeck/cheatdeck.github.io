@@ -1,4 +1,5 @@
 {
+  "esquema": 1,
   "versao": 1,
   "atualizadoEm": "2026-11-18",
   "categorias": ["jogador", "combate", "veiculos", "ambiente", "visual"],

@@ -1,0 +1,19 @@
+# Confere o cheats.json em cada pedido de mudança, antes de alguém aprovar.
+name: Verificar cheats
+
+on:
+  pull_request:
+    paths:
+      - cheats.json
+      - scripts/cheats.py
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir cheats.json
+        run: python3 scripts/cheats.py verificar

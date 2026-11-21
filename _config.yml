@@ -52,6 +52,7 @@ defaults:
       layout: default
 
 exclude:
+  - scripts
   - README.md
   - LEIA-ME.md
   - Gemfile

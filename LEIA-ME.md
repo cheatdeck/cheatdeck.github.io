@@ -42,17 +42,26 @@ Qualquer commit na branch `main` republica o site em um ou dois minutos. O andam
 
 ## 4. Como publicar um código novo
 
-1. No GitHub, abra o `cheats.json` e clique no lápis para editar.
-2. No cheat descoberto, troque `"codigo": null` pela sequência, por exemplo `["down", "up", "left"]`.
-3. Some 1 ao `versao` e atualize o `atualizadoEm`.
-4. Clique em **Commit changes**.
+Todo dia uma tarefa agendada pesquisa códigos novos e, quando acha um confirmado por duas fontes, abre um **pedido de mudança** (pull request) aqui no repositório, com as fontes. Para publicar:
 
-O site publica em cerca de um minuto, e o GitHub guarda o arquivo antigo em cache por até 10 minutos. O app só aceita a lista nova se o `versao` for maior que o dele.
+1. Abra o pedido (o GitHub manda e-mail e notificação no app do celular).
+2. Confira as fontes e o resumo da verificação.
+3. Clique em **Merge pull request**.
+
+Para editar à mão: abra o `cheats.json`, clique no lápis, troque `"codigo": null` pela sequência (por exemplo `["down", "up", "left", "right"]`) e clique em **Commit changes**. Não precisa mexer em `versao` nem em `atualizadoEm`.
+
+Em qualquer caso, antes de publicar o GitHub confere o arquivo com as mesmas regras do app (`scripts/cheats.py`):
+
+- JSON válido, categorias e tipos de requisito conhecidos, códigos só com `up`, `right`, `down` e `left`;
+- nenhum cheat removido e nenhum `id` trocado;
+- se algo mudou, sobe `versao` e `atualizadoEm` sozinho.
+
+Se a conferência falhar, nada é publicado: o site continua com o arquivo anterior e você recebe um e-mail do GitHub com o erro, em português, na aba **Actions**. O site publica em cerca de dois minutos, e o GitHub guarda o arquivo antigo em cache por até 10 minutos.
 
 Cuidados:
 
-- **Nunca mude o `id` de um cheat.** O progresso das pessoas está ligado a ele.
-- **Confira se o JSON é válido** antes de salvar (por exemplo, em jsonlint.com). Se houver erro, o app ignora a atualização e o código novo não chega a ninguém.
+- **Nunca mude o `id` de um cheat.** O progresso das pessoas está ligado a ele (a conferência barra).
+- **Categoria ou tipo de requisito novo exige versão nova do app** antes; a conferência barra até lá.
 - Ao lançar uma versão nova do app, mantenha o `shared/cheats.json` do projeto igual a este.
 
 ## 5. Antes de lançar
