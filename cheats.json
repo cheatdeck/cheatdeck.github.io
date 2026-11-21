@@ -1,7 +1,7 @@
 {
   "esquema": 1,
-  "versao": 1,
-  "atualizadoEm": "2026-11-18",
+  "versao": 2,
+  "atualizadoEm": "2026-11-21",
   "categorias": ["jogador", "combate", "veiculos", "ambiente", "visual"],
   "cheats": [
     {"id": "us-250-000", "nome": "US$ 250.000", "categoria": "jogador", "efeito": "Dá US$ 250.000 na hora.", "requisito": {"tipo": "historia", "texto": "Conclua a história."}, "codigo": ["up", "right", "down", "left", "up", "left", "down", "right"]},
