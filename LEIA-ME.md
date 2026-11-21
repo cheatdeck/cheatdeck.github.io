@@ -42,11 +42,12 @@ Qualquer commit na branch `main` republica o site em um ou dois minutos. O andam
 
 ## 4. Como publicar um código novo
 
-Todo dia uma tarefa agendada pesquisa códigos novos e, quando acha um confirmado por duas fontes, abre um **pedido de mudança** (pull request) aqui no repositório, com as fontes. Para publicar:
+Você pesquisa os códigos e publica de um destes jeitos:
 
-1. Abra o pedido (o GitHub manda e-mail e notificação no app do celular).
-2. Confira as fontes e o resumo da verificação.
-3. Clique em **Merge pull request**.
+- **Pedindo ao Claude:** "adiciona o código ↑ → ↓ ← … do cheat X". Ele edita o `cheats.json` e salva no repositório.
+- **À mão:** veja o parágrafo abaixo.
+
+Depois disso, nada depende de você: o site confere o arquivo e publica, e o app busca a lista nova sozinho.
 
 Para editar à mão: abra o `cheats.json`, clique no lápis, troque `"codigo": null` pela sequência (por exemplo `["down", "up", "left", "right"]`) e clique em **Commit changes**. Não precisa mexer em `versao` nem em `atualizadoEm`.
 
