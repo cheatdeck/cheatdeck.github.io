@@ -2,10 +2,10 @@
 title: Política de privacidade
 description: Como o app Cheat Deck trata as suas informações.
 permalink: /privacidade/
-atualizado: 2026-11-19
+atualizado: 2026-11-23
 ---
 
-Esta política explica como o aplicativo Cheat Deck ("app"), oferecido por {{ site.responsavel }} ("nós"), trata as suas informações.
+Esta política explica como o aplicativo Cheat Deck ("app"), oferecido pela equipe do Cheat Deck ("nós"), trata as suas informações.
 
 <div class="destaque" markdown="1">
 
@@ -44,7 +44,7 @@ Se você ativar "Código descoberto", o app mostra um aviso quando a lista atual
 
 ## 4. Quando você fala com a gente
 
-Se você nos escrever por e-mail (por exemplo, pelo botão "Enviar um código descoberto"), recebemos o seu endereço de e-mail e o conteúdo da mensagem. Usamos isso apenas para ler, responder e, se for o caso, incluir o código no app. Você pode pedir a exclusão da sua mensagem a qualquer momento.
+Se você nos escrever por e-mail ([{{ site.email }}](mailto:{{ site.email }})), recebemos o seu endereço de e-mail e o conteúdo da mensagem. Usamos isso apenas para ler, responder e, se for o caso, usar a informação para corrigir a lista de cheats. Você pode pedir a exclusão da sua mensagem a qualquer momento.
 
 ## 5. Lojas de aplicativos
 
@@ -76,5 +76,5 @@ Se o app passar a tratar dados de outra forma (por exemplo, com contas, anúncio
 
 ## 12. Contato
 
-Responsável pelo tratamento: {{ site.responsavel }}.<br>
+Responsável pelo tratamento: equipe do Cheat Deck.<br>
 Dúvidas e pedidos sobre privacidade: [{{ site.email }}](mailto:{{ site.email }}).

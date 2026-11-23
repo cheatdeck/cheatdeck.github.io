@@ -3,20 +3,13 @@
 # Enquanto algum deles tiver "PREENCHER", o site mostra uma faixa de aviso no topo.
 # ------------------------------------------------------------------
 
-# Quem responde pelo app perante a LGPD.
-# Pessoa física: nome completo. Empresa: razão social e CNPJ.
-responsavel: "PREENCHER nome do responsável"
-
 # E-mail público de contato. Aparece no suporte, na política e nos termos.
 # Dica: use um endereço só para o app, porque ele fica público.
-email: "PREENCHER@exemplo.com"
-
-# Foro dos Termos de uso, no formato Cidade/UF.
-foro: "PREENCHER Cidade/UF"
+email: "cheatdeck@fastmail.com"
 
 # Lojas. Deixe "publicado" em false até o app estar disponível em cada loja.
 lojas:
-  app_store_id: ""          # Apple ID numérico (App Store Connect → Informações do app)
+  app_store_id: "6836999784"          # Apple ID numérico (App Store Connect → Informações do app)
   publicado_ios: false
   play_id: ""               # applicationId do Android, ex.: com.joaobottazzini.cheatdeck
   publicado_android: false

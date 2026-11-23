@@ -38,8 +38,8 @@
 {%- endif %}
 </head>
 <body>
-{%- if site.responsavel contains "PREENCHER" or site.email contains "PREENCHER" or site.foro contains "PREENCHER" %}
-<p class="aviso-config" role="alert">Preencha responsável, e-mail e foro no arquivo _config.yml antes de divulgar este site.</p>
+{%- if site.email contains "PREENCHER" %}
+<p class="aviso-config" role="alert">Preencha o e-mail no arquivo _config.yml antes de divulgar este site.</p>
 {%- endif %}
 
 <header class="topo">

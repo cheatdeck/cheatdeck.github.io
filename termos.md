@@ -2,10 +2,10 @@
 title: Termos de uso
 description: Regras de uso do app Cheat Deck.
 permalink: /termos/
-atualizado: 2026-11-19
+atualizado: 2026-11-23
 ---
 
-Estes termos valem para o uso do aplicativo Cheat Deck ("app"), oferecido por {{ site.responsavel }} ("nós"). Ao usar o app, você concorda com eles. Se não concordar, não use o app.
+Estes termos valem para o uso do aplicativo Cheat Deck ("app"), oferecido pela equipe do Cheat Deck ("nós"). Ao usar o app, você concorda com eles. Se não concordar, não use o app.
 
 ## 1. O que é o app
 
@@ -73,7 +73,7 @@ Podemos atualizar estes termos. A data no topo indica a versão em vigor. Se a m
 
 ## 13. Lei aplicável
 
-Estes termos seguem as leis do Brasil. Fica eleito o foro de {{ site.foro }}, sem prejuízo do direito do consumidor de recorrer ao foro do seu domicílio.
+Estes termos seguem as leis do Brasil.
 
 ## 14. Contato
 

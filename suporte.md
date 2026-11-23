@@ -12,16 +12,6 @@ Escreva para [{{ site.email }}](mailto:{{ site.email }}). Respondemos por e-mail
 
 </div>
 
-## Enviar um código descoberto
-
-Achou o código de um cheat que aparece como "Código ainda não descoberto", ou um código que está errado? [Mande para nós]({{ site.email | prepend: 'mailto:' | append: '?subject=C%C3%B3digo%20descoberto' }}) com:
-
-- o nome do cheat;
-- a sequência no direcional, na ordem (por exemplo: baixo, cima, esquerda…);
-- se possível, onde você viu ou um vídeo mostrando o código funcionando.
-
-Conferimos antes de publicar. Quando o código entra na lista, o app avisa quem ativou a notificação "Código descoberto".
-
 ## Perguntas frequentes
 
 ### Digitei o código e nada aconteceu

@@ -14,11 +14,9 @@ Este site tem as páginas que as lojas pedem e o arquivo que o app baixa para se
 
 Abra o `_config.yml` e troque:
 
-- `responsavel`: seu nome completo, ou razão social e CNPJ se publicar por empresa;
-- `email`: o e-mail público de contato (ele fica visível no site);
-- `foro`: cidade e estado, por exemplo `Brasília/DF`;
+- `email`: o e-mail público de contato (ele fica visível no site).
 
-Enquanto algum campo tiver "PREENCHER", o site mostra uma faixa amarela no topo.
+Os textos legais não citam nome de responsável nem foro: dizem "equipe do Cheat Deck", iguais aos embarcados no app (`shared/legal`). Enquanto o e-mail tiver "PREENCHER", o site mostra uma faixa amarela no topo.
 
 ## 2. Onde está publicado
 
